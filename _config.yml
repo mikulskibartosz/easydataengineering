@@ -5,6 +5,7 @@ google_analytics: UA-114911946-3
 
 owner_name: Bartosz Mikulski
 permalink: /:title
+future: false
 
 authors:
   mikulskibartosz:
