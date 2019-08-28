@@ -1,0 +1,63 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+    width: 100%;
+    position: unset;
+    clear: both;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section {
+    width: 98%;
+    padding-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+    float: none
+}
+
+.author-thumb {
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+    border-radius: 100%;
+}
+
+.post-top-meta {
+    margin-bottom: 2rem;
+}
+
+.post-top-meta .author-thumb {
+    width: 72px;
+    height: 72px;
+}
+
+.post-top-meta.authorpage .author-thumb {
+    margin-top: 40px;
+}
+
+.post-top-meta span {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, .44);
+    display: inline-block;
+}
+
+.post-top-meta .author-description {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+.btn.follow {
+    border-color: #02B875;
+    color: #1C9963;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 999em;
+    font-size: 0.85rem;
+    display: inline-block;
+}

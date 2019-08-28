@@ -1,1 +1,25 @@
+title: Easy Data Engineering
+description: Data engineering made easy
 theme: jekyll-theme-minimal
+google_analytics: UA-114911946-3
+
+owner_name: Bartosz Mikulski
+permalink: /:title
+
+authors:
+  mikulskibartosz:
+    name: Bartosz Mikulski
+    display_name: Bartosz Mikulski
+    gravatar: f7b10ac636829a042e1a2e1d40656955
+    #email: 
+    web: https://mikulskibartosz.name
+    twitter: https://twitter.com/mikulskibartosz
+    description: "* data scientist / software engineer * conference speaker * organizer of School of A.I. meetups in Poznań * co-founder of Software Craftsmanship Poznan & Poznan Scala User Group"
+
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
