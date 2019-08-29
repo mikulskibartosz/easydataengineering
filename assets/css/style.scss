@@ -17,7 +17,9 @@ section {
 
 footer {
     width: 100%;
-    float: none
+    float: none;
+    position: unset;
+    clear: both;
 }
 
 .author-thumb {
@@ -60,4 +62,22 @@ footer {
     border-radius: 999em;
     font-size: 0.85rem;
     display: inline-block;
+}
+
+.info-box {
+    color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.05);
+    border-color: rgba(0,0,0,.6);;
+    position: relative;
+    padding: .75rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: .25rem;
+}
+
+.info-box a {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
 }
