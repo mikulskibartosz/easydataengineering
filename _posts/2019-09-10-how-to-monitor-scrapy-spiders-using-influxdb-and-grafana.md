@@ -99,7 +99,7 @@ In the end, I am going to see two new entries in the statistics printed when the
  'item_dropped_reasons_count/DropItem': 3,
 ```
 
-# Custom drop reasons
+## Custom drop reasons
 
 To define a custom drop reason, we have to **extend the DropItem class**.
 
@@ -197,13 +197,19 @@ custom_settings = {
         # other configuration elements
         'STATS_CLASS': 'scrapers.metrics.InfluxDBStatsCollector'
     }
-
 ```
 
 To test whether the metrics were stored correctly, I send a query using the InfluxDB REST API and retrieve all values from my measurements collection.
 
 ```bash
-curl -G 'http://localhost:8086/query?pretty=true' --data-urlencode "db=spider" --data-urlencode "q=SELECT * FROM scrapy_spiders"
+curl -G 'http://localhost:8086/query?pretty=true' \
+    --data-urlencode "db=spider" \
+    --data-urlencode "q=SELECT * FROM scrapy_spiders"
+```
+
+Response:
+
+```
 {
     "results": [
         {
@@ -255,13 +261,17 @@ Log in to Grafana, in the menu select "Configuration" -> "Data sources," click "
 Select the "New dashboard" option in Grafana. In the "New Panel" window click the "Add Query" button.
 
 Click the "Toggle text edit mode" and write the **InfluxDB query to retrieve the time series data**.
-In the case of my spider, the query to retrieve the dropped elements looks like this: `SELECT "item_dropped_count" FROM "scrapy_spiders" WHERE $timeFilter`
+In the case of my spider, the query to retrieve the dropped elements looks like this:
+
+```sql
+SELECT "item_dropped_count" FROM "scrapy_spiders" WHERE $timeFilter
+```
 
 ## Configure alerts
 
 In the dashboard's edit view, click the "Alert" button. In this window, we have to select the time window (in this example, 5 minutes), the alert checking interval (every 1 minute), and the aggregating function (average).
 
-{% include image.html url="assets/images/2019-09-09-how-to-monitor-scrapy-spiders-using-influxdb-and-grafana/alerts_settings.png" description="" %}
+{% include image.html url="assets/images/2019-09-10-how-to-monitor-scrapy-spiders-using-influxdb-and-grafana/alerts_settings.png" description="" %}
 
 
 When the average number of dropped elements in the defined time window exceeds the threshold, the alert's status will switch to "pending." **If the measurement keeps exceeding the threshold for at least the duration of the time window, the alert will switch status to "alerting,"** and Grafana starts displaying/sending notifications (if you configured alert notifications).
