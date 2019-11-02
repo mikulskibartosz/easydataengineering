@@ -15,7 +15,7 @@ authors:
     #email: 
     web: https://mikulskibartosz.name
     twitter: https://twitter.com/mikulskibartosz
-    description: "* data scientist / software engineer * conference speaker * organizer of School of A.I. meetups in Poznań * co-founder of Software Craftsmanship Poznan & Poznan Scala User Group"
+    description: "* data scientist / data engineer * conference speaker * co-founder of Software Craftsmanship Poznan & Poznan Scala User Group"
 
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
