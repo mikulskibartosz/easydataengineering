@@ -5,6 +5,7 @@ author: mikulskibartosz
 tags: [ 'Parquet', 'Python' ]
 description: "Define a schema, write to a file, partition the data"
 featured: false
+redirect_to: https://mikulskibartosz.name/how-to-write-parquet-file-in-python
 hidden: false
 excerpt: "Define a schema, write to a file, partition the data"
 ---
