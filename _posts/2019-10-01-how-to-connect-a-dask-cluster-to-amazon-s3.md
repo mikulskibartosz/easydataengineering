@@ -5,6 +5,7 @@ author: mikulskibartosz
 tags: [ 'Dask', 'AWS', 'Amazon S3' ]
 description: "How to connect a Dask cluster (in Docker) to Amazon S3"
 featured: false
+redirect_to: https://mikulskibartosz.name/how-to-connect-a-dask-cluster-to-amazon-s3
 hidden: false
 excerpt: "How to connect a Dask cluster (in Docker) to Amazon S3"
 ---
