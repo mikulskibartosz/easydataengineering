@@ -5,6 +5,7 @@ author: mikulskibartosz
 tags: [ 'Scrapy', 'Grafana' ]
 description: "How to write Scrapy statistics to InfluxDB and setup Grafana alerts"
 featured: false
+redirect_to: https://mikulskibartosz.name/how-to-monitor-scrapy-spiders-using-influxdb-and-grafana
 hidden: false
 excerpt: "How to write Scrapy statistics to InfluxDB and setup Grafana alerts"
 ---
