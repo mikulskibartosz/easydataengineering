@@ -5,6 +5,7 @@ author: mikulskibartosz
 tags: [ 'Python', 'Performance Engineering' ]
 description: "How to avoid memory leaks in Jupyter Notebook"
 featured: false
+redirect_to: https://mikulskibartosz.name/python-memory-management-in-jupyter-notebook
 hidden: false
 excerpt: "How to avoid memory leaks in Jupyter Notebook"
 ---
