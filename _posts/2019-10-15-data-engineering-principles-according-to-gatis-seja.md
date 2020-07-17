@@ -6,6 +6,7 @@ tags: [ 'Data engineering', 'Principles' ]
 description: "Lessons learnt from Gatis Seja's presentation about data engineering principles"
 featured: false
 hidden: false
+redirect_to: https://mikulskibartosz.name/data-engineering-principles-according-to-gatis-seja
 excerpt: "Lessons learnt from Gatis Seja's presentation about data engineering principles"
 ---
 
