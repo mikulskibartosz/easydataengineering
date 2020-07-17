@@ -6,6 +6,7 @@ tags: [ 'Time Series', 'Anomaly Detection' ]
 description: ""
 featured: false
 hidden: false
+redirect_to: https://mikulskibartosz.name/using-exponentially-weighted-moving-average-for-anomaly-detection
 excerpt: ""
 ---
 
