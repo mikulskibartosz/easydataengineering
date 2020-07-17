@@ -5,6 +5,7 @@ author: mikulskibartosz
 tags: [ 'Tensorflow', 'AWS', 'Amazon S3' ]
 description: "How to save the model in a file, upload it to S3, and serve it using the Docker image of Tensorflow Serving"
 featured: false
+redirect_to: https://mikulskibartosz.name/loading-tensorflow-models-from-amazon-s3-with-tensorflow-serving
 hidden: false
 excerpt: "How to save the model in a file, upload it to S3, and serve it using the Docker image of Tensorflow Serving"
 ---
